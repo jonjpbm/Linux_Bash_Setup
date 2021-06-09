@@ -46,3 +46,11 @@ alias sercon="/home/jonjpbm/scripts/screen_serial_con.sh"
 alias np="vi /home/jonjpbm/notepad"
 alias grep='grep --color=auto'
 
+#Function
+function decimal2binary() {
+   echo "obase=2;$1" | bc
+}
+
+export -f decimal2binary
+
+
